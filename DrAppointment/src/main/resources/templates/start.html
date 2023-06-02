@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Welcome!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="my-login.css">
+
+</head>
+
+<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#"><b>Third Eye Hospital</b></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="/aboutus">About Us</a>
+				<a class="nav-item nav-link" href="#">Contact Us</a>
+				<a class="nav-item nav-link disabled" href="#">Disabled</a>
+			</div>
+		</div>
+	</nav>
+	
+	<!--	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					<div class="brand">
+						<img src="sign.jpg" alt="logo">
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">Welcome to our Management System. Please choose an option:</h4>
+						</div>
+						<div>
+							<a th:href="@{/patlog}" class="btn btn-primary">Patient</a>
+							<a th:href="@{/doclog}" class="btn btn-warning">Doctor</a>
+						</div>
+					</div> -->
+
+<div class="my-login-page">
+	<div class="container h-100" style="width: 30rem;">
+		<div class="container h-100">
+			<div class="brand">
+				<img class="card-img-top" src="sign.jpg" alt="Card image cap" style="width: 5rem;">
+			</div>
+
+			<h5 class="card-header">One Stop Solution for Healthy Life</h5>
+			<div class="card-body">
+				<h5 class="card-title">Welcome to our Management System.</h5>
+				<p class="card-text">Please choose an option:
+				</p>
+				<div>
+					<a th:href="@{/patlog}" class="btn btn-primary">Patient</a>
+					<a th:href="@{/doclog}" class="btn btn-warning">Doctor</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		SpringMVC MiniProject - Hospital Management System
+		<div class="copyright">&copy; 2023 UdayaKumar</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</section>
+
+</body>
+
+</html>
